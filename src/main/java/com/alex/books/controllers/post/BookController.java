@@ -1,8 +1,9 @@
-package com.alex.books.controllers;
+package com.alex.books.controllers.post;
 
 import com.alex.books.entities.Book;
 import com.alex.books.service.BookService;
 import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
