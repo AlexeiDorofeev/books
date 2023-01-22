@@ -15,13 +15,13 @@ function BooksList() {
     }, []);
 
     return (
-        <div>
+        <div className="bg-amber-700">
             {loading ? (
-                <p>Loading...</p>
+                <p className="bg-amber-800 h-1/4">Loading...</p>
             ) : (
-                <ul>
+                <ul className="">
                     {books.map(book => (
-                        <li key={book.id}>
+                        <li key={book.id} className="bg-amber-600">
                             {book.name} by {book.author}
                         </li>
                     ))}

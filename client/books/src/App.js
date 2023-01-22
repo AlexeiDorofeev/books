@@ -1,10 +1,9 @@
-import './App.css';
 import './components/BookList'
 import BookList from "./components/BookList";
 
 function App() {
     return (
-        <div className="App">
+        <div className="bg-amber-600">
             hii
             <BookList></BookList>
         </div>
