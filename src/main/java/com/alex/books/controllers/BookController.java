@@ -20,8 +20,8 @@ public class BookController {
 
     private BookService bookService;
 
-    @PostMapping("/books")
-    public ResponseEntity<Book> createBook(@Valid @RequestBody Book book, BindingResult bindingResult) {
+    @PostMapping
+    public ResponseEntity<Book> addBook(@RequestBody @Valid Book book, BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
